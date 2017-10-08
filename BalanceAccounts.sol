@@ -28,6 +28,10 @@ contract Test{
         balances[addr] += bal;
     }
     
+    function getBalance(address addr) isOwner constant returns(uint){
+        return balances[addr];
+    }
+    
     function kill() isOwner{
         suicide(owner);
     }
