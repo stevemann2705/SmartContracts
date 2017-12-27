@@ -66,14 +66,6 @@ public class CryptoRateAPI {
 	}
 
 	public static void main(String[] args) throws IOException, JSONException {
-		/*JSONObject json = null;
-		try {
-			json = readJsonFromUrl("https://api.coinmarketcap.com/v1/ticker/ethereum/");
-		} catch (FileNotFoundException e) {
-			System.out.println("\"" + e.getMessage() + "\"" + " not found. Please try again with correct URL");
-		}*/
-		// System.out.println(json.toString());
-		//System.out.println(json.get("price_usd"));
 		System.out.println(getCurrencyRate("ethlend"));
 		
 	}
